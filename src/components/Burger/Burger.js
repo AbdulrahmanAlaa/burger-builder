@@ -9,7 +9,6 @@ const burger = (props) => {
             return <BurgerIngredient key={ingKey + i} type={ingKey} />
         });
     }).reduce((arr, ele) => arr.concat(ele), []);
-    console.log(transformedIngredients);
     if (transformedIngredients.length ===0) {
         transformedIngredients = <p>Please start adding ingredients</p>  
     }
